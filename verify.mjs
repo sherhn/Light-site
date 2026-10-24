@@ -2,12 +2,12 @@ import {readFile,access} from 'node:fs/promises';
 import {createRequire} from 'node:module';
 const root=new URL('./dist/',import.meta.url),origin='https://getlight.sherhn.space';
 const sharp=createRequire(import.meta.url)('sharp');
-const pages=['index.html','modules/index.html','features/index.html','designs/index.html','en/index.html','en/modules/index.html','en/features/index.html','en/designs/index.html'];
+const pages=['modular/index.html','editor/index.html','workspace/index.html','en/modular/index.html','en/editor/index.html','en/workspace/index.html','index.html','modules/index.html','features/index.html','designs/index.html','en/index.html','en/modules/index.html','en/features/index.html','en/designs/index.html'];
 const titles=new Set();let links=0;
 const assert=(condition,message)=>{if(!condition)throw new Error(message)};
 for(const file of pages){
  const html=await readFile(new URL(file,root),'utf8');
- const english=file.startsWith('en/'),lang=english?'en':'ru',page=file.includes('modules/')?'modules':file.includes('features/')?'features':file.includes('designs/')?'designs':'home';
+ const english=file.startsWith('en/'),lang=english?'en':'ru',page=file.replace(/^en\//,'').split('/')[0].replace('index.html','home');
  const canonical=origin+'/'+file.replace(/index.html$/,'');
  assert(html.includes('<html lang="'+lang+'"'),file+': wrong language');
  const title=html.match(/<title>([^<]+)<\/title>/)?.[1];assert(title&&!titles.has(title),file+': title missing/duplicate');titles.add(title);
@@ -32,9 +32,9 @@ for(const file of pages){
   await access(new URL('.'+(href.endsWith('/')?href+'index.html':href),root));links++;
  }
 }
-const sitemap=await readFile(new URL('sitemap.xml',root),'utf8');assert((sitemap.match(/<loc>/g)||[]).length===6,'Sitemap must contain 6 production URLs');assert(!sitemap.includes('designs'),'Draft designs leaked into sitemap');
+const sitemap=await readFile(new URL('sitemap.xml',root),'utf8');assert((sitemap.match(/<loc>/g)||[]).length===12,'Sitemap must contain 12 production URLs');assert(!sitemap.includes('designs'),'Draft designs leaked into sitemap');
 const robots=await readFile(new URL('robots.txt',root),'utf8');assert(robots.includes('Sitemap: '+origin+'/sitemap.xml'),'Sitemap not declared');
-console.log('PASS: 8 static localized pages, 8 social images, '+links+' internal resource/link targets, structured data, 9 real modules, sitemap and robots.');
+console.log('PASS: 14 static localized pages, 14 social images, '+links+' internal resource/link targets, structured data, 9 real modules, sitemap and robots.');
 
 assert((await readFile(new URL('CNAME',root),'utf8')).trim()==='getlight.sherhn.space','Incorrect Pages domain');
 await access(new URL('.nojekyll',root));
