@@ -1,0 +1,13 @@
+{
+  "name": "light-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "check": "node verify.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  }
+}

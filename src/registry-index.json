@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "id": "lisp",
+      "name": "Lisp",
+      "version": "1.0.0",
+      "category": "Languages",
+      "summary": "Common Lisp and Scheme: structural editing, a live REPL, compile and load, ASDF systems, symbol navigation and SBCL in Linux.",
+      "cover": "cover.png",
+      "path": "modules/lisp",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 2327,
+          "sha256": "2d2d08fe5578d9b3cfbeb1c7c4c5a98841acb52c615f2638da1b116f6c06b701"
+        },
+        {
+          "name": "cover.png",
+          "size": 20213,
+          "sha256": "a92c1fef2a7252c9bc4bb465e2d86131320f578ab117ebc8ed8c2ed28d9241b6"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "lisp",
+          "lsp",
+          "cl",
+          "asd",
+          "scm",
+          "ss",
+          "el",
+          "clj",
+          "cljs",
+          "edn"
+        ],
+        "files": []
+      }
+    },
+    {
+      "id": "c-cpp",
+      "name": "C and C++",
+      "version": "1.1.0",
+      "category": "Languages",
+      "summary": "Highlighting, brackets, folding and an outline for C, C++ and headers; compile and run a file; the compilers and debuggers in Linux.",
+      "cover": "cover.png",
+      "path": "modules/c-cpp",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 13577,
+          "sha256": "43d3ef6b8bc39388cbf1ebecaa8b6bd4d476fffe64c2ad574ed8457d97a228a0"
+        },
+        {
+          "name": "cover.png",
+          "size": 24372,
+          "sha256": "8e56b89c1ca78e4058258e26975d50305b3f51e9e24c87f1ba1c9606b7b27be9"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "c",
+          "h",
+          "cc",
+          "cpp",
+          "cxx",
+          "hpp",
+          "hh",
+          "hxx"
+        ],
+        "files": [
+          "CMakeLists.txt",
+          "meson.build",
+          "Makefile",
+          "makefile",
+          "GNUmakefile"
+        ]
+      }
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "version": "1.1.0",
+      "category": "Languages",
+      "summary": "Highlighting, indentation, folding by blocks and an outline for Python; run a file; python3 and pip in Linux.",
+      "cover": "cover.png",
+      "path": "modules/python",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 7940,
+          "sha256": "96e75fa31c845b9fe7ca8a2896c3734c599d59a42a4ee42a694adb9de8abf219"
+        },
+        {
+          "name": "cover.png",
+          "size": 23024,
+          "sha256": "31cf770144af03e9ec77864b487c60a5353366f31d2c429fc669f596775a44f3"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "py",
+          "pyw"
+        ],
+        "files": [
+          "pyproject.toml",
+          "requirements.txt",
+          "setup.py",
+          "Pipfile"
+        ]
+      }
+    },
+    {
+      "id": "assembler",
+      "name": "Assembler",
+      "version": "1.0.0",
+      "category": "Languages",
+      "summary": "NASM and GNU assembler: instructions, registers, directives, labels and an outline of labels; nasm and QEMU in Linux.",
+      "cover": "cover.png",
+      "path": "modules/assembler",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 18050,
+          "sha256": "10cede97d4f3c5c8758f2dda76bfe135e16f69ca8630e10e84a3f1f6bf9c39bb"
+        },
+        {
+          "name": "cover.png",
+          "size": 22821,
+          "sha256": "68288bc7fc9c2b5e243f371e6964a0ab5f901f3b9192d9bcdf1e870b79946d2f"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "asm",
+          "nasm",
+          "s"
+        ],
+        "files": []
+      }
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "version": "1.0.0",
+      "category": "Languages",
+      "summary": "Tags, attributes, entities and comments; tag indentation and folding, an element outline and a web page template.",
+      "cover": "cover.png",
+      "path": "modules/html",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 37240,
+          "sha256": "20a810fe0a3d337637fee654ddf1a9be0867e294ee9cbe6fcbb50b4d72ff1b6b"
+        },
+        {
+          "name": "cover.png",
+          "size": 22864,
+          "sha256": "055bad5b586c6eab1858b9b3e404704c11a26ecd161e46a55496ed6a64af62b2"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "html",
+          "htm",
+          "xhtml"
+        ],
+        "files": []
+      }
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "version": "1.0.0",
+      "category": "Languages",
+      "summary": "Selectors, properties, values, colours, variables and at-rules; brace indentation, folding and a stylesheet template.",
+      "cover": "cover.png",
+      "path": "modules/css",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 16425,
+          "sha256": "c81de72b41e4feb375ca83e6468735aad56cbdfabeb4bae022aba0ed2a66c697"
+        },
+        {
+          "name": "cover.png",
+          "size": 23953,
+          "sha256": "5a0faa582e7162212a66564902e910a8db40167d3437c4ade86a2a1c9754a3ac"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "css"
+        ],
+        "files": []
+      }
+    },
+    {
+      "id": "markdown",
+      "name": "Markdown",
+      "version": "1.1.0",
+      "category": "Documents",
+      "summary": "Headings, emphasis, code, links and lists; Enter continues a list; folding and an outline by headings.",
+      "cover": "cover.png",
+      "path": "modules/markdown",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 3961,
+          "sha256": "ac4e8eefe317237a061d0cea1edb4b6120bd5352d125c102bd8b3f1500293ac9"
+        },
+        {
+          "name": "cover.png",
+          "size": 20331,
+          "sha256": "453f010fa6b8d0ab9f2d5d2c3c85a6db4d28778e32f45212900b8249bc1941d9"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "md",
+          "markdown"
+        ],
+        "files": []
+      }
+    },
+    {
+      "id": "restructuredtext",
+      "name": "reStructuredText",
+      "version": "1.1.0",
+      "category": "Documents",
+      "summary": "Headings by underline, directives, roles, links and lists for .rst; folding and an outline by sections.",
+      "cover": "cover.png",
+      "path": "modules/restructuredtext",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 3918,
+          "sha256": "47fa3daf687fe7d1c25477c073802e0a8d0e1f2396bcd7e8e56c94b54f3ca1b4"
+        },
+        {
+          "name": "cover.png",
+          "size": 19760,
+          "sha256": "79927e63b4690799495bcaa417bd4c599aceb7a78562f878d8d7f846f829a21e"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "rst"
+        ],
+        "files": [
+          "conf.py"
+        ]
+      }
+    },
+    {
+      "id": "shell-make",
+      "name": "Shell and Make",
+      "version": "1.1.0",
+      "category": "Languages",
+      "summary": "Shell scripts, makefiles and the usual configuration files: highlighting, comments and an outline of functions and targets.",
+      "cover": "cover.png",
+      "path": "modules/shell-make",
+      "files": [
+        {
+          "name": "module.json",
+          "size": 9306,
+          "sha256": "0402730e8671cad80deb39405f67a8bf5ba05b7c899f4e047753408ba445c78d"
+        },
+        {
+          "name": "cover.png",
+          "size": 25307,
+          "sha256": "1971913a1d245fc8b388dc3eb632e457765ddc9d18891d1b1c7a27b234be8229"
+        }
+      ],
+      "detect": {
+        "extensions": [
+          "sh",
+          "mk"
+        ],
+        "files": [
+          "Makefile",
+          "makefile",
+          "GNUmakefile",
+          "Dockerfile"
+        ]
+      }
+    }
+  ]
+}

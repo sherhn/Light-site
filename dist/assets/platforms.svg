@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="windows" viewBox="0 0 24 24"><path fill="currentColor" d="M2 4.5 10.5 3.3v8H2zm10-1.4L22 1.7v9.6H12zM2 12.8h8.5v8L2 19.6zm10 0h10v9.5L12 21z"/></symbol>
+  <symbol id="macos" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="13" rx="1.5"/><path d="m4 16-2 4h20l-2-4M9 20h6"/></g></symbol>
+  <symbol id="linux" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 9 3 3-3 3m7 0h5"/></g></symbol>
+</svg>
